@@ -1,0 +1,15 @@
+# RandLA-Net inference configuration.
+# No checkpoint is shipped (see models/randlanet/README.md).
+checkpoint: models/randlanet/checkpoint.pth
+num_classes: 9
+voxel_size: 0.06
+k_neighbors: 16
+device: cpu
+# Network width (must match the checkpoint that was trained).
+d_in: 6
+d_out: 9
+d_feature: 8
+encoder_dims: [32, 128, 256, 512]
+decoder_dims: [256, 128, 64, 32]
+# Internal class ids expected at the output layer (our 9-class taxonomy).
+class_ids: [0, 1, 2, 3, 4, 5, 6, 7, 8]

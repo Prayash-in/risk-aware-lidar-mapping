@@ -1,0 +1,201 @@
+{
+  "sample": "urban_crossing",
+  "label": "Measured",
+  "scenario": "urban_crossing",
+  "frames": 20,
+  "trials": {
+    "trial_1": [
+      {
+        "frame_id": 0,
+        "latency_ms": 88.238,
+        "controller_ms": 8.679,
+        "cells": 4013,
+        "memory_bytes": 684288,
+        "compute_units": 600398.4,
+        "tracks": 0
+      },
+      {
+        "frame_id": 1,
+        "latency_ms": 90.275,
+        "controller_ms": 10.441,
+        "cells": 4554,
+        "memory_bytes": 854912,
+        "compute_units": 1716820.8,
+        "tracks": 3
+      },
+      {
+        "frame_id": 2,
+        "latency_ms": 92.635,
+        "controller_ms": 11.788,
+        "cells": 4675,
+        "memory_bytes": 888768,
+        "compute_units": 2369910.4,
+        "tracks": 3
+      },
+      {
+        "frame_id": 3,
+        "latency_ms": 95.369,
+        "controller_ms": 13.03,
+        "cells": 4714,
+        "memory_bytes": 915392,
+        "compute_units": 2700230.4,
+        "tracks": 3
+      },
+      {
+        "frame_id": 4,
+        "latency_ms": 95.926,
+        "controller_ms": 13.096,
+        "cells": 4729,
+        "memory_bytes": 943872,
+        "compute_units": 3238947.2,
+        "tracks": 3
+      },
+      {
+        "frame_id": 5,
+        "latency_ms": 107.428,
+        "controller_ms": 15.176,
+        "cells": 4787,
+        "memory_bytes": 976512,
+        "compute_units": 3818060.8,
+        "tracks": 3
+      },
+      {
+        "frame_id": 6,
+        "latency_ms": 116.514,
+        "controller_ms": 24.995,
+        "cells": 4770,
+        "memory_bytes": 989568,
+        "compute_units": 4173971.2,
+        "tracks": 3
+      },
+      {
+        "frame_id": 7,
+        "latency_ms": 96.459,
+        "controller_ms": 16.419,
+        "cells": 4810,
+        "memory_bytes": 1007936,
+        "compute_units": 4357593.6,
+        "tracks": 3
+      },
+      {
+        "frame_id": 8,
+        "latency_ms": 108.451,
+        "controller_ms": 18.754,
+        "cells": 4849,
+        "memory_bytes": 1012288,
+        "compute_units": 4604187.2,
+        "tracks": 3
+      },
+      {
+        "frame_id": 9,
+        "latency_ms": 107.596,
+        "controller_ms": 20.349,
+        "cells": 4880,
+        "memory_bytes": 1020672,
+        "compute_units": 4757617.6,
+        "tracks": 3
+      },
+      {
+        "frame_id": 10,
+        "latency_ms": 106.147,
+        "controller_ms": 19.335,
+        "cells": 4894,
+        "memory_bytes": 1024960,
+        "compute_units": 4827481.6,
+        "tracks": 3
+      },
+      {
+        "frame_id": 11,
+        "latency_ms": 107.683,
+        "controller_ms": 21.118,
+        "cells": 4948,
+        "memory_bytes": 1044352,
+        "compute_units": 5073492.8,
+        "tracks": 3
+      },
+      {
+        "frame_id": 12,
+        "latency_ms": 109.522,
+        "controller_ms": 20.05,
+        "cells": 4984,
+        "memory_bytes": 1046208,
+        "compute_units": 5258910.4,
+        "tracks": 3
+      },
+      {
+        "frame_id": 13,
+        "latency_ms": 121.302,
+        "controller_ms": 24.279,
+        "cells": 4966,
+        "memory_bytes": 1050048,
+        "compute_units": 5294811.2,
+        "tracks": 3
+      },
+      {
+        "frame_id": 14,
+        "latency_ms": 118.445,
+        "controller_ms": 25.395,
+        "cells": 4978,
+        "memory_bytes": 1058880,
+        "compute_units": 5442928.0,
+        "tracks": 3
+      },
+      {
+        "frame_id": 15,
+        "latency_ms": 117.718,
+        "controller_ms": 21.939,
+        "cells": 5015,
+        "memory_bytes": 1069376,
+        "compute_units": 5505982.4,
+        "tracks": 3
+      },
+      {
+        "frame_id": 16,
+        "latency_ms": 115.896,
+        "controller_ms": 25.464,
+        "cells": 5018,
+        "memory_bytes": 1072064,
+        "compute_units": 5682388.8,
+        "tracks": 3
+      },
+      {
+        "frame_id": 17,
+        "latency_ms": 118.446,
+        "controller_ms": 23.914,
+        "cells": 5026,
+        "memory_bytes": 1076672,
+        "compute_units": 5692816.0,
+        "tracks": 3
+      },
+      {
+        "frame_id": 18,
+        "latency_ms": 117.924,
+        "controller_ms": 25.207,
+        "cells": 5042,
+        "memory_bytes": 1073728,
+        "compute_units": 5667481.6,
+        "tracks": 3
+      },
+      {
+        "frame_id": 19,
+        "latency_ms": 119.073,
+        "controller_ms": 31.327,
+        "cells": 5095,
+        "memory_bytes": 1085440,
+        "compute_units": 5939968.0,
+        "tracks": 3
+      }
+    ]
+  },
+  "per_frame_latency_ms": {
+    "mean": 107.552,
+    "min": 88.238,
+    "max": 121.302,
+    "p50": 108.067,
+    "p95": 119.184
+  },
+  "fps_mean": 9.39,
+  "provenance": {
+    "cpu": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD"
+  }
+}

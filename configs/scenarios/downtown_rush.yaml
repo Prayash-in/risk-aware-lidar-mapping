@@ -1,0 +1,114 @@
+name: downtown_rush
+description: 'Denser/faster variant: vehicle closer and faster, pedestrian crossing
+  on the -x side, cyclist opposing. Proves scenario switching without code changes.'
+seed: 21
+extent_m: 100.0
+lidar:
+  height_m: 1.8
+  max_range_m: 60.0
+  fps_target: 10
+road:
+  length_m: 100.0
+  width_m: 8.0
+curb:
+  width_m: 0.6
+  height_m: 0.14
+density:
+  road: 1400
+  curb: 350
+  ground: 800
+  building_each: 280
+  vegetation_each: 180
+  obstacle_each: 150
+  vehicle: 350
+  pedestrian: 150
+  cyclist: 200
+buildings:
+- cx: -14.0
+  cy: 14.0
+  sx: 12.0
+  sy: 10.0
+  h: 20.0
+- cx: 10.0
+  cy: -15.0
+  sx: 14.0
+  sy: 9.0
+  h: 16.0
+- cx: 30.0
+  cy: 15.0
+  sx: 10.0
+  sy: 12.0
+  h: 11.0
+- cx: -32.0
+  cy: -14.0
+  sx: 12.0
+  sy: 8.0
+  h: 13.0
+vegetation:
+- cx: 6.0
+  cy: 7.0
+  r: 2.0
+  h_trunk: 2.2
+  h_canopy: 2.6
+- cx: -18.0
+  cy: -7.2
+  r: 2.3
+  h_trunk: 2.1
+  h_canopy: 2.5
+- cx: -28.0
+  cy: 8.0
+  r: 1.7
+  h_trunk: 2.0
+  h_canopy: 2.2
+static_obstacles:
+- cx: -4.0
+  cy: 5.4
+  sx: 2.0
+  sy: 0.6
+  h: 1.0
+- cx: 12.0
+  cy: -5.4
+  sx: 3.0
+  sy: 0.6
+  h: 1.0
+- cx: -20.0
+  cy: 6.0
+  sx: 2.4
+  sy: 1.4
+  h: 1.6
+- cx: 26.0
+  cy: -6.0
+  sx: 2.0
+  sy: 1.2
+  h: 1.2
+vehicle:
+  start:
+  - 18.0
+  - 1.7
+  velocity:
+  - -11.0
+  - 0.0
+  size:
+  - 4.4
+  - 1.8
+  - 1.45
+pedestrian:
+  crossing_x: -24.0
+  y_min: -8.0
+  y_max: 8.0
+  speed: 1.8
+  radius: 0.32
+  height: 1.7
+cyclist:
+  start:
+  - 34.0
+  - -3.0
+  velocity:
+  - -5.5
+  - 0.0
+  rider_radius: 0.3
+  rider_height: 1.5
+  bike_size:
+  - 1.7
+  - 0.5
+  - 0.9

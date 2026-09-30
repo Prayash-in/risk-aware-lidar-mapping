@@ -1,0 +1,4 @@
+mode,cells,high,medium,coarse,memory_bytes,latency_ms,compute_usage,budget_feasible,tracks
+uniform,4972,4972,0,0,1150528,112.789,874195.2,True,3
+distance,3773,47,492,3234,587520,103.49600000000001,202152.0,True,3
+adaptive,5095,2527,2550,18,1085440,140.41400000000002,5939968.0,True,3

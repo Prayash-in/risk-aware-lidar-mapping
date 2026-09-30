@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.venv/
+venv/
+
+# Optional model weights (never committed)
+models/randlanet/checkpoint.pth
+models/randlanet/*.pt
+
+# Data
+data/
+KITTI_ROOT/
+
+# Legacy JS frontend (archived to ../_hidden/frontend) — never track it, even
+# if a copy is placed inside this repository.
+frontend/
+backend/
+_hidden/
+node_modules/
+
+# Scratch
+*.log

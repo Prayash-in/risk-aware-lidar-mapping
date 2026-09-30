@@ -1,0 +1,28 @@
+# SemanticKITTI real-data configuration.
+# Dataset is NOT shipped; point KITTI_ROOT (env) or kitti_root here at data.
+kitti_root: data/semantic_kitti
+sequence: '08'
+frame: 100
+stride_points: 6000     # deterministic stride to cap points per frame
+use_labels: true        # dataset ground truth (NOT model predictions)
+use_poses: true         # ego-motion compensation for temporal comparison
+# KITTI semantic id -> internal class (verified against semantic-kitti lineage).
+label_map:
+  40: 1    # road -> ROAD
+  44: 1    # parking -> ROAD
+  48: 2    # sidewalk -> CURB
+  60: 1    # lane-marking -> ROAD
+  70: 3    # vegetation -> VEGETATION
+  71: 3    # trunk -> VEGETATION
+  72: 3    # terrain -> VEGETATION
+  50: 4    # building -> BUILDING
+  51: 4    # fence -> BUILDING
+  10: 6    # car -> VEHICLE
+  11: 6    # bicycle -> VEHICLE
+  13: 6    # bus -> VEHICLE
+  15: 6    # motorcycle -> VEHICLE
+  18: 6    # truck -> VEHICLE
+  20: 6    # other-vehicle -> VEHICLE
+  30: 7    # person -> PEDESTRIAN
+  31: 8    # bicyclist -> CYCLIST
+  32: 7    # motorcyclist -> PEDESTRIAN

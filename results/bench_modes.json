@@ -1,0 +1,193 @@
+{
+  "sample": "urban_crossing",
+  "label": "Measured",
+  "scenario": "urban_crossing",
+  "frames_processed": 20,
+  "trials": [
+    {
+      "trial": 1,
+      "frame_id": 19,
+      "modes": {
+        "uniform": {
+          "frame_id": 19,
+          "mode": "uniform",
+          "cells": 4972,
+          "tiers": {
+            "high": 4972,
+            "medium": 0,
+            "coarse": 0
+          },
+          "memory_bytes": 1150528,
+          "latency_s": 0.112789,
+          "fps": 8.87,
+          "controller_latency_s": 0.029116,
+          "split_ops": 202,
+          "merge_ops": 0,
+          "compute_usage": 874195.2,
+          "compute_budget": 874195.2,
+          "budget_feasible": true,
+          "importance": {
+            "range": 0.4606,
+            "dynamic": 0.9109,
+            "semantic": 0.6917,
+            "bubble": 0.8469,
+            "prediction": 0.2584,
+            "total": 0.6522
+          },
+          "tracks": 3,
+          "semantic_source": "ground_truth"
+        },
+        "distance": {
+          "frame_id": 19,
+          "mode": "distance",
+          "cells": 3773,
+          "tiers": {
+            "high": 47,
+            "medium": 492,
+            "coarse": 3234
+          },
+          "memory_bytes": 587520,
+          "latency_s": 0.103496,
+          "fps": 9.66,
+          "controller_latency_s": 0.032926,
+          "split_ops": 202,
+          "merge_ops": 0,
+          "compute_usage": 202152.0,
+          "compute_budget": 202152.0,
+          "budget_feasible": true,
+          "importance": {
+            "range": 0.4606,
+            "dynamic": 0.9109,
+            "semantic": 0.6917,
+            "bubble": 0.8469,
+            "prediction": 0.2584,
+            "total": 0.6522
+          },
+          "tracks": 3,
+          "semantic_source": "ground_truth"
+        },
+        "adaptive": {
+          "frame_id": 19,
+          "mode": "adaptive",
+          "cells": 5095,
+          "tiers": {
+            "high": 2527,
+            "medium": 2550,
+            "coarse": 18
+          },
+          "memory_bytes": 1085440,
+          "latency_s": 0.140414,
+          "fps": 7.12,
+          "controller_latency_s": 0.033636,
+          "split_ops": 202,
+          "merge_ops": 0,
+          "compute_usage": 5939968.0,
+          "compute_budget": 5939968.0,
+          "budget_feasible": true,
+          "importance": {
+            "range": 0.4606,
+            "dynamic": 0.9109,
+            "semantic": 0.6917,
+            "bubble": 0.8469,
+            "prediction": 0.2584,
+            "total": 0.6522
+          },
+          "tracks": 3,
+          "semantic_source": "ground_truth"
+        }
+      }
+    }
+  ],
+  "modes": {
+    "uniform": {
+      "frame_id": 19,
+      "mode": "uniform",
+      "cells": 4972,
+      "tiers": {
+        "high": 4972,
+        "medium": 0,
+        "coarse": 0
+      },
+      "memory_bytes": 1150528,
+      "latency_s": 0.112789,
+      "fps": 8.87,
+      "controller_latency_s": 0.029116,
+      "split_ops": 202,
+      "merge_ops": 0,
+      "compute_usage": 874195.2,
+      "compute_budget": 874195.2,
+      "budget_feasible": true,
+      "importance": {
+        "range": 0.4606,
+        "dynamic": 0.9109,
+        "semantic": 0.6917,
+        "bubble": 0.8469,
+        "prediction": 0.2584,
+        "total": 0.6522
+      },
+      "tracks": 3,
+      "semantic_source": "ground_truth",
+      "cells_vs_adaptive_pct": 97.6
+    },
+    "distance": {
+      "frame_id": 19,
+      "mode": "distance",
+      "cells": 3773,
+      "tiers": {
+        "high": 47,
+        "medium": 492,
+        "coarse": 3234
+      },
+      "memory_bytes": 587520,
+      "latency_s": 0.103496,
+      "fps": 9.66,
+      "controller_latency_s": 0.032926,
+      "split_ops": 202,
+      "merge_ops": 0,
+      "compute_usage": 202152.0,
+      "compute_budget": 202152.0,
+      "budget_feasible": true,
+      "importance": {
+        "range": 0.4606,
+        "dynamic": 0.9109,
+        "semantic": 0.6917,
+        "bubble": 0.8469,
+        "prediction": 0.2584,
+        "total": 0.6522
+      },
+      "tracks": 3,
+      "semantic_source": "ground_truth",
+      "cells_vs_adaptive_pct": 74.1
+    },
+    "adaptive": {
+      "frame_id": 19,
+      "mode": "adaptive",
+      "cells": 5095,
+      "tiers": {
+        "high": 2527,
+        "medium": 2550,
+        "coarse": 18
+      },
+      "memory_bytes": 1085440,
+      "latency_s": 0.140414,
+      "fps": 7.12,
+      "controller_latency_s": 0.033636,
+      "split_ops": 202,
+      "merge_ops": 0,
+      "compute_usage": 5939968.0,
+      "compute_budget": 5939968.0,
+      "budget_feasible": true,
+      "importance": {
+        "range": 0.4606,
+        "dynamic": 0.9109,
+        "semantic": 0.6917,
+        "bubble": 0.8469,
+        "prediction": 0.2584,
+        "total": 0.6522
+      },
+      "tracks": 3,
+      "semantic_source": "ground_truth",
+      "cells_vs_adaptive_pct": 100.0
+    }
+  }
+}

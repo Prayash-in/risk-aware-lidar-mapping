@@ -1,0 +1,70 @@
+# Default pipeline configuration (mirrors config.PipelineConfig).
+mode: adaptive
+
+lidar:
+  height_m: 1.8
+  max_range_m: 60.0
+  fps_target: 10.0
+
+quadtree:
+  extent_m: 100.0
+  min_cell_size: 0.05
+  max_cell_size: 0.50
+  max_depth: 11
+  uniform_cell_size: 0.10
+
+lod:
+  s_min: 0.05
+  s_max: 0.50
+  lam: 0.12
+
+controller:
+  w_r: 0.2
+  w_d: 0.15
+  w_s: 0.25
+  w_b: 0.25
+  w_p: 0.15
+  range_scale: 30.0
+  split_threshold: 0.60
+  merge_threshold: 0.30
+  split_frames: 2
+  merge_frames: 3
+  ema_alpha: 0.5
+  ref_depth: 9
+  halo_radius_m: 3.0
+  halo_value: 0.7
+  semantic_importance: {0: 0.6, 1: 1.0, 2: 0.8, 3: 0.3, 4: 0.5, 5: 0.7, 6: 0.9, 7: 0.9, 8: 0.9}
+  use_range: true
+  use_semantic: true
+  use_dynamic: true
+  use_bubble: true
+  use_prediction: true
+
+tracker:
+  r_min: {pedestrian: 2.0, cyclist: 3.0, vehicle: 5.0, unknown: 2.0}
+  kappa: 1.5
+  horizon: 2.0
+  pred_horizon: 2.0
+  pred_samples: 8
+  gate_m: 8.0
+  coast_frames: 5
+
+budget:
+  pct: 100.0
+  hot_rate: 1.0
+  warm_rate: 0.5
+  cold_rate: 0.15
+
+randlanet:
+  checkpoint: models/randlanet/checkpoint.pth
+  num_classes: 9
+  voxel_size: 0.06
+  k_neighbors: 16
+  device: cpu
+
+data:
+  kind: synthetic
+  scenario: urban_crossing
+  kitti_root: data/semantic_kitti
+  kitti_sequence: '08'
+  kitti_frame: 0

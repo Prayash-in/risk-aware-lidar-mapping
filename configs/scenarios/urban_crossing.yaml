@@ -1,0 +1,120 @@
+name: urban_crossing
+description: 100x100m urban corridor. Ego at origin. Vehicle approaches along road
+  from +x (~28m). Pedestrian crosses at x=32 (~33m). Cyclist rides the shoulder from
+  -x.
+seed: 7
+extent_m: 100.0
+lidar:
+  height_m: 1.8
+  max_range_m: 60.0
+  fps_target: 10
+road:
+  length_m: 100.0
+  width_m: 8.0
+curb:
+  width_m: 0.6
+  height_m: 0.14
+density:
+  road: 1400
+  curb: 350
+  ground: 800
+  building_each: 280
+  vegetation_each: 180
+  obstacle_each: 150
+  vehicle: 350
+  pedestrian: 150
+  cyclist: 200
+buildings:
+- cx: -20.0
+  cy: 15.0
+  sx: 16.0
+  sy: 10.0
+  h: 12.0
+- cx: 15.0
+  cy: 17.0
+  sx: 12.0
+  sy: 12.0
+  h: 18.0
+- cx: -25.0
+  cy: -16.0
+  sx: 14.0
+  sy: 10.0
+  h: 9.0
+- cx: 22.0
+  cy: -16.0
+  sx: 10.0
+  sy: 8.0
+  h: 14.0
+- cx: -2.0
+  cy: 24.0
+  sx: 20.0
+  sy: 8.0
+  h: 10.0
+vegetation:
+- cx: -12.0
+  cy: 7.5
+  r: 2.2
+  h_trunk: 2.2
+  h_canopy: 2.6
+- cx: 10.0
+  cy: -7.5
+  r: 1.8
+  h_trunk: 2.0
+  h_canopy: 2.2
+- cx: 36.0
+  cy: 8.0
+  r: 2.5
+  h_trunk: 2.4
+  h_canopy: 3.0
+- cx: -36.0
+  cy: -8.0
+  r: 2.0
+  h_trunk: 2.0
+  h_canopy: 2.4
+static_obstacles:
+- cx: 6.0
+  cy: 5.4
+  sx: 2.0
+  sy: 0.6
+  h: 1.0
+- cx: -8.0
+  cy: -5.4
+  sx: 2.0
+  sy: 0.6
+  h: 1.0
+- cx: 18.0
+  cy: 6.2
+  sx: 2.4
+  sy: 1.4
+  h: 1.6
+vehicle:
+  start:
+  - 28.0
+  - -1.7
+  velocity:
+  - -8.0
+  - 0.0
+  size:
+  - 4.4
+  - 1.8
+  - 1.45
+pedestrian:
+  crossing_x: 32.0
+  y_min: -9.0
+  y_max: 9.0
+  speed: 1.4
+  radius: 0.32
+  height: 1.7
+cyclist:
+  start:
+  - -30.0
+  - 3.0
+  velocity:
+  - 4.5
+  - 0.0
+  rider_radius: 0.3
+  rider_height: 1.5
+  bike_size:
+  - 1.7
+  - 0.5
+  - 0.9
